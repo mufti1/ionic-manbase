@@ -1,0 +1,42 @@
+<!--
+  Generated template for the QuizcontentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="mainColor">
+    <ion-title>ManBase | Quiz</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background-red" padding>
+  <p style="text-align:center; color: white;">Username kamu : {{ username }}</p>
+
+    <ion-card *ngFor="let quizs of quizData let i=index">
+        <ion-card-header>
+          <p class="quiz-no">Soal No {{ i + 1 }}</p>
+        </ion-card-header>
+        <div>
+          
+        </div>
+        <ion-card-content class="quiz-content" radio-group [(ngModel)]="quiz[quizs.id]">
+          <div [innerHtml] = "quizs.quiz"></div>
+
+          <label for=""><ion-radio value="a">a</ion-radio> {{ quizs.a }}</label>
+          <label for=""><ion-radio value="b">b</ion-radio> {{ quizs.b }}</label>
+          <label for=""><ion-radio value="c">c</ion-radio> {{ quizs.c }}</label>
+          <label for=""><ion-radio value="d">d</ion-radio> {{ quizs.d }}</label>
+          <label for=""><ion-radio value="e">e</ion-radio> {{ quizs.e }}</label>
+
+        </ion-card-content>
+    </ion-card>
+
+      <button class="button-quiz" ion-button full color="white" round (click)="showConfirm()" >Kirim Quiz</button>    
+    <!-- <div *ngFor="let quiz of quizData">
+        <p>{{ quiz.id }}</p>
+    </div> -->
+</ion-content>

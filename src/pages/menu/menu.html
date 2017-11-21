@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="mainColor">
+    <ion-title>ManBase | Menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let bab of babs" col-4 (click)="materiContent(bab.id,bab.judul)">
+        <ion-card class="bab-materi" color="mainColor">
+
+          <ion-item color="mainColor">
+            <img src="https://www.zrthrteam.duniaarloji.com/_assets/yoo.jpg">
+            <h2 class="text-center">Bab {{ bab.no }}</h2>
+            <p class="text-center">{{ bab.judul }}</p>
+          </ion-item>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

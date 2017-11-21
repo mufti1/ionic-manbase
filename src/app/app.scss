@@ -1,0 +1,111 @@
+/*bagian home*/
+.icon-home{
+	margin-left: 115px;
+	margin-top: 40px;
+}
+.btn-home{
+	height: 40px !important;
+	width: 99%;
+}
+
+.list-home{
+	margin-top: 50px;
+}
+.list-home > ion-item{
+	background-color: transparent;
+}
+/*bagian home*/
+
+
+/*bagian menu*/
+.btn-menu{
+	width: 99%;
+	height: 80px !important;
+	border-radius: 10px;
+}
+.bab-materi{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+/*bagian menu*/
+
+
+/*materi*/
+.title-text{
+	text-align: center !important;
+	margin-bottom: 30px;
+}
+.content{
+	text-align: left;
+}
+.text-justify{
+	text-align: justify;
+}
+/*materi*/
+/*Quiz*/
+.score{
+    margin-top: 20px;
+}
+.color-red{
+    color: #FF5372;
+}
+.background-red{
+    background-color: #FF5372;
+}
+.quiz-content > label{
+    display: block;
+}
+.button-lihat{
+    background-color: white;
+    color: #FF5372;
+}
+/*Quiz*/
+
+/*bagian responsive*/
+@media screen and (max-width: 1024px) {
+    .icon-home {
+        margin-left: 420px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .icon-home {
+        margin-left: 300px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 412px){
+    .icon-home {
+        margin-left: 115px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 414px){
+    .icon-home {
+        margin-left: 115px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .icon-home {
+        margin-left: 105px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .icon-home {
+        margin-left: 95px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .icon-home {
+        margin-left: 75px;
+        margin-top: 40px;
+    }
+}
+
+
+/*bagian responsive*/
